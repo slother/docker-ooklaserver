@@ -2,4 +2,4 @@
 
 Usage:
 
-docker run -d -p 8080:8080 speedtest:latest
+docker run -d -p 8080:8080 -p 80:80 -p 5060:5060 speedtest:latest
