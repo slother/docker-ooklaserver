@@ -2,10 +2,10 @@
 
 service apache2 start
 
-su -c "./OoklaServer --daemon" speedtest
+su -c "./OoklaServer" speedtest
 
-while true
-    do
-        sleep 1
-    done
+#while true
+#    do
+#        sleep 1
+#    done
 
