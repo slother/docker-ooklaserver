@@ -28,6 +28,7 @@ RUN wget http://install.speedtest.net/ooklaserver/ooklaserver.sh && \
     chmod a+x ooklaserver.sh && \
     ./ooklaserver.sh install -f
 
+RUN chown -R speedtest:speedtest /data
 RUN echo "" > /var/www/html/index.html
 
 ADD crossdomain.xml /var/www/html
